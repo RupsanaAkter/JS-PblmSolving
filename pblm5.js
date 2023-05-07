@@ -1,3 +1,11 @@
+// Example
+// SumAllPrime Number(10) output should be 17
+// SumAllPrime Number(977) output should be 73156
+
+// ...HINTS...
+// **push 
+// **reduce
+
 function sumPrimes(num) {
     var sumArr= [];
     for(var i=0;i<=num;i++){
@@ -27,47 +35,29 @@ function sumPrimes(num) {
 
 
 
-// function sumPrimes(num) {
-//     let primesArr = [];
-//     for (let i = 2; i < num; i++){
-//      let testArr = [];
-//      //generate test array for each i value
-//      for (let j = 2; j < i; j++){
-//        testArr.push(j);
-//      }
-//      // test each i value against against its test array
-//      if (testArr.every(value => i % value !== 0)){
-//        primesArr.push(i);
-//      }
-//     }
-//     return primesArr.reduce(((sum, num) => sum + num),0);
-//    }
-   
-//    console.log(sumPrimes(10));
-//    console.log(sumPrimes(977));
+
+// Example
+// SumAllPrime Number(10) output should be 17
+// SumAllPrime Number(977) output should be 73156
+
+// ..NO HINTS..
 
 
-
-
-
-
-
-
-// function primeSum(num){
-//     let primeTotal=0;
-//     for(let i=2;i<=num;i++){
-//         for(let j=2;j<=num;j++){
-//             if(i===j){
-//                 primeTotal += i
-//             }
-//             if(i%j===0){
-//                 break;
-//             }
-//         }
+function primeSum(num){
+    let primeTotal=0;
+    for(let i=2;i<=num;i++){
+        for(let j=2;j<=num;j++){
+            if(i===j){
+                primeTotal += i
+            }
+            if(i%j===0){
+                break;
+            }
+        }
        
-//     }
-// return primeTotal;
+    }
+return primeTotal;
 
-// }
-// console.log(primeSum(10));
-// console.log(primeSum(977));
+}
+console.log(primeSum(10));
+console.log(primeSum(977));
